@@ -1,0 +1,62 @@
+Algoritmo Menor_Y_Mayor
+	
+	//Inicio : A B C 
+	//Salida : Resultado de cual es el numero mayor y cual es el menor
+	
+	//Inicializacion 
+	
+	A <- 0
+	B <- 0
+	C <- 0 
+	
+	Mostrar "Valor de los numero"
+	Leer A, B, C
+	
+	//Definicion de repicion de numero
+	Mientras A = B o B = C o A = C Hacer
+		
+		Escribir "Hay un numero repetido"
+		Leer A, B, C
+		
+	FinMientras
+	
+	
+	//El numero mayor es:
+	Si A > B Y A > C Entonces
+		
+		Escribir "El valor mayor es el primero :" ,A
+		
+	SiNo
+		Si B > A Y B > C Entonces
+			
+			Escribir "El valor mayor es el segundo :" ,B
+			
+		SiNo
+			 Si C > A Y C > B Entonces
+				
+			Escribir "El valor mayor es el tercero :" ,C
+				
+			FinSi
+		FinSi
+	FinSi
+	
+	//El numero menor es:
+	Si A < B Y A < C Entonces
+		
+		Escribir "El valor menor es el primero :" ,A
+		
+	SiNo
+		Si B < A Y B < C Entonces
+			
+			Escribir "El valor menor es el segundo :" ,B
+			
+		SiNo
+			Si  C < A Y C < B Entonces
+				
+				Escribir "El valor menor es el tercero :" ,C
+				
+			FinSi
+		FinSi
+	FinSi
+	
+FinAlgoritmo
